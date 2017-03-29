@@ -1,0 +1,10 @@
+
+= Worker Application
+
+Start with a simple application
+
+== Worker Application: Technical Stack
+
+== Worker Application: Workflow
+
+* Validate -> Verify -> Docker

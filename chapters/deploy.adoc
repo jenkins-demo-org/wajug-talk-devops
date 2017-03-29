@@ -1,0 +1,11 @@
+
+= Deployment
+
+== CD ?
+
+CD is not Continuous Deployment
+
+== CD -> Stack
+
+* Règles: master + droits (token)
+* Input pour prod ?

@@ -1,0 +1,13 @@
+= Context
+Demo Application
+
+== Context: Architecture
+
+TBD
+
+== Context: Global Organization
+
+== Context: Global Workflow
+
+* Master => staging
+* Branch feature => "gitlab envs" / compose stacks

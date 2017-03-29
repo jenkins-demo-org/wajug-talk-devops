@@ -1,0 +1,9 @@
+= Improving our Pipeline
+
+== Parallelization
+
+* Validate -> (Verify + Docker)
+
+== From CI to CD
+
+* Validate -> (Verify + Docker) -> Deploy

@@ -1,1 +1,0 @@
-# wajug-talk-devops

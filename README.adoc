@@ -1,0 +1,10 @@
+# WaJUG DevOps Talk
+
+## How to generate the slides ?
+
+[source,bash]
+----
+docker-compose up
+----
+
+You can then find the slides in ./dist/

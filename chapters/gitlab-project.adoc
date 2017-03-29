@@ -1,0 +1,9 @@
+
+= GitLab Project
+image::{imagedir}/gitlab-background.jpg[background, size=cover]
+
+== What is it ?
+image::{imagedir}/gitlab-background.jpg[background, size=cover]
+
+== Who is behind ?
+image::{imagedir}/gitlab-background.jpg[background, size=cover]
