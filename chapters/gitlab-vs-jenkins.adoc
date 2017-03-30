@@ -1,0 +1,9 @@
+
+= GitLab CI vs Jenkins
+image::{imagedir}/street-fighter.gif[]
+
+
+
+== Who wins ?
+
+Vote for you best candidate !

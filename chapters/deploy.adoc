@@ -1,11 +1,14 @@
 
 = Deployment
+Where the Dev meet the Ops
 
-== CD ?
+== Continuous Deployment ?
 
-CD is not Continuous Deployment
+image::{imagedir}/continuous-depl-vs-delivery.jpg[width=800]
 
-== CD -> Stack
+== Our Deployment Example
 
-* Règles: master + droits (token)
-* Input pour prod ?
+* *Stack*: Ops owns the final Stack
+* A successful Dev Pipeline triggers the Ops Pipeline
+* Automation everywhere
+** But *Manual* Validation before production

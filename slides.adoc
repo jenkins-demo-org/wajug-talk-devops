@@ -28,11 +28,9 @@ include::chapters/context.adoc[]
 include::chapters/worker-app.adoc[]
 include::chapters/improving-our-pipeline.adoc[]
 include::chapters/deploy.adoc[]
+include::chapters/gitlab-vs-jenkins.adoc[]
 :leveloffset: -1
 
-== Production time
-
-Vote for you best candidate !
 
 == Thank You
 

@@ -3,8 +3,15 @@
 
 == Parallelization
 
-* Validate -> (Verify + Docker)
+* Integration Tests and Docker "Bats" Harness
+** Integration Tests are slow
+** No need to run them sequentially
+* Improvements examples:
+** More *branches* for JDK compliancy (7-8-9 / Oracl/JDK/IBM)
 
 == From CI to CD
 
-* Validate -> (Verify + Docker) -> Deploy
+* CI: Continuous Integration
+* CD: Continuous Delivery
+
+image::{imagedir}/cd-howto-pipeline.png[width=800]
