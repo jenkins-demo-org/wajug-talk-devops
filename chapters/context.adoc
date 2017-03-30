@@ -1,13 +1,30 @@
+
 = Context
-Demo Application
+
+== Context: Example Application
+
+* link:https://github.com/docker/example-voting-app[Docker Demo Application]
+
+image::{imagedir}/votes.gif[]
 
 == Context: Architecture
 
-TBD
+image::{imagedir}/architecture.png[width=700]
 
 == Context: Global Organization
 
+* Each application is owned by 1 team:
+** Python team
+** NodeJS team
+** Java Team
+* Database and infrastructure are owned by the Ops team
+
 == Context: Global Workflow
 
-* Master => staging
-* Branch feature => "gitlab envs" / compose stacks
+* "Software Supply Chain"
+
+image::{imagedir}/entonnoir.png[width=800]
+
+== Context: Single Team Workflow
+
+image::{imagedir}/single-app-workflow.png[width=800]

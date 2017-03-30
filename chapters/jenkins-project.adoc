@@ -2,7 +2,7 @@
 = Jenkins Project
 image::{imagedir}/jenkins-background.jpg[background, size=cover]
 
-== Meet Jenkins...
+== Meet Jenkins
 image::{imagedir}/jenkins-background.jpg[background, size=cover]
 
 image::{imagedir}/butler-w-kk.png[width="150"]
@@ -14,7 +14,7 @@ image::{imagedir}/butler-w-kk.png[width="150"]
 * 300,000 Jenkins servers
 * 1,200+ plugins
 
-== Jenkins Popularity: Through the Roof
+== Jenkins Popularity
 image::{imagedir}/jenkins-background.jpg[background, size=cover]
 
 image::{imagedir}/jenkins-on-ci-radar.png[title=http://www.infoq.com/research/ci-server,float=left,caption=]
@@ -26,19 +26,42 @@ image::{imagedir}/jenkins-background.jpg[background, size=cover]
 
 image::{imagedir}/jenkins-cd-orchestrator.jpg[caption="CD orchestrator",width="600"]
 
-== 2016 - Jenkins 2
+
+== Why Jenkins 2
 image::{imagedir}/jenkins-background.jpg[background, size=cover]
 
-* Pourquoi Jenkins 2 ?
-** Jenkins 1 a(vait) + 10ans
-*** v1.658:
-**** acegi-security:1.0.7 — Avril 2008
-**** spring-core:2.5.6 — Octobre 2008
-** Parce que l’intégration continue a évolué
-*** jenkins-ci.org !?
-** slave ➞ agent
-** "Fire and forget"
-//
-//
-// == Who is behind ?
-// image::{imagedir}/jenkins-background.jpg[background, size=cover]
+* Jenkins 1 is more than 12 years old
+* Because Continuous Integration have changed...
+** jenkins-ci.org !?
+* slave ➞ agent
+* "Fire and forget"
+* "Modern Web":
+** link:https://jenkins.io[]
+** link:https://jenkins.io/docs[]
+** link:https://plugins.jenkins.io[]
+
+
+== Jenkins 2 Goals
+image::{imagedir}/jenkins-background.jpg[background, size=cover]
+
+* **Target:** CI -> CD
+* No breaking changes from Jenkins 1
+** Smooth upgrade
+** Plugins compatibility
+* First time experience improvement
+** Brand new Wizard
+* **Pipeline-as-Code:**
+** `Jenkinsfile` stored in SCM
+**  Groovy DSL: "Code your Pipeline"
+
+== Jenkins in 2017
+image::{imagedir}/jenkins-background.jpg[background, size=cover]
+
+* Declarative Pipeline
+** Still `Jenkinsfile`
+** Easier
+** Compatible with *Scripted Pipeline*
+* BlueOcean
+** Brand new GUI
+** Written in ReactJS
+** Opiniated

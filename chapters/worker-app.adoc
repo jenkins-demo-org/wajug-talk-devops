@@ -3,8 +3,29 @@
 
 Start with a simple application
 
+== Worker Application: Value
+
+[quote]
+____
+Persist the votes
+____
+
+* Unstack votes from the In-Memory Queue (Redis)
+* For each vote found, write it in the RDBMS (PostgreSQL)
+* No GUI, no user facing, runs in the backend network
+* Critical for metrics, but no need for High Availability
+
 == Worker Application: Technical Stack
+
+* Written in Java
+** Needs Java 8
+* Maven Build Chain
+** ```mvn clean install```
+* Runtime with Docker
+** "Uber-JAR"
+** Stateless
+** No crappy Application Server
 
 == Worker Application: Workflow
 
-* Validate -> Verify -> Docker
+image::{imagedir}/worker-workflow.png[width=900]
