@@ -59,6 +59,7 @@ pipeline {
     stage('Validate') {
       steps {
         sh 'mvn compile test'
+        stash(name: 'target', includes: 'target/**')
       }
     }
     stage('Verify') {
@@ -67,13 +68,22 @@ pipeline {
           "Integration Test": {
             sh 'git submodule update --init --recursive'
             sh 'mvn verify'
+
           },
           "Docker Tests": {
+			      unstash 'target'
+			      sh 'ls -l ./target/'
             sh 'bats ./src/test/bats/*.bats'
           }
         )
       }
     }
   }
+  environment {
+    DOCKER_HOSTNAME = '192.168.0.1'
+    DOCKER_HOST = 'tcp://192.168.0.1:2375'
+  }
 }
 ```
+
+## Jenkinsfile with deploy
