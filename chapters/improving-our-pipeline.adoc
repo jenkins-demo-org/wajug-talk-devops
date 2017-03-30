@@ -7,7 +7,7 @@
 ** Integration Tests are slow
 ** No need to run them sequentially
 * Improvements examples:
-** More *branches* for JDK compliancy (7-8-9 / Oracl/JDK/IBM)
+** More *branches* for JDK compliancy (7-8-9 / Oracle/JDK/IBM)
 
 == From CI to CD
 
