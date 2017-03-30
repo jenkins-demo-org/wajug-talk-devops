@@ -70,21 +70,15 @@ stage('Verify') {
 }
 ```
 
-## Jenkinsfile with deploy
-
-```groovy
-stage('Deploy') {
-  steps {
-    input(message: 'Is it OK to deploy Boss ?', id: 'boss')
-    sh 'docker tag worker:latest 172.17.0.1:5000/worker:latest'
-    sh 'docker push 172.17.0.1:5000/worker:latest'
-  }
-}
-```
-
-## Shared Library
+## Jenkinsfile with deploy and shared
 
 ```groovy
 #!groovy
 @Library('deploy@master') _
+...
+stage('Deploy') {
+  steps {
+    deploy 'worker:latest'
+  }
+}
 ```
