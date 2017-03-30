@@ -1,0 +1,30 @@
+
+= Speakers
+
+== Julien GARCIA-GONZALEZ
+
+image::{imagedir}/julien.jpg[width="300", float="right"]
+
+* DevOps Facilitator @ Wemanity
+** Helping on DevOps mindset adoption @ Lampiris
+** Frictionless mindset
+** Open-source lover
+** Come by to discuss the new trendies tech!
+* Contact:
+** Twitter: link:https://twitter.com/jgsqware[@jgsqware]
+** Github: link:https://github.com/jgsqware[jgsqware]
+** Google: garciagonzalez.julien@gmail.com
+
+== Damien DUPORTAL
+
+[.right.text-center]
+image::{imagedir}/damien.jpg[height="400",float="left"]
+
+* Training Engineer @ CloudBees
+** Docker & Apple fanboy. Sorry
+** Human stack focused
+** Rock climber
+* Contact:
+** Twitter: link:https://twitter.com/DamienDuportal[@DamienDuportal]
+** Github: link:https://github.com/dduportal[dduportal]
+** Google: damien.duportal@gmail.com

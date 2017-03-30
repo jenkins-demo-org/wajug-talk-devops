@@ -2,8 +2,43 @@
 = Jenkins Project
 image::{imagedir}/jenkins-background.jpg[background, size=cover]
 
-== What is it ?
+== Meet Jenkins...
 image::{imagedir}/jenkins-background.jpg[background, size=cover]
 
-== Who is behind ?
+image::{imagedir}/butler-w-kk.png[width="150"]
+
+* #1 Continuous Integration and Delivery server
+* Created by Kohsuke Kawaguchi 12 years ago (Hudson)
+* An independent and active community (link:https://jenkins.io[])
+* 100,000 active installations
+* 300,000 Jenkins servers
+* 1,200+ plugins
+
+== Jenkins Popularity: Through the Roof
 image::{imagedir}/jenkins-background.jpg[background, size=cover]
+
+image::{imagedir}/jenkins-on-ci-radar.png[title=http://www.infoq.com/research/ci-server,float=left,caption=]
+
+image::{imagedir}/jenkins-worldwide-stats.png[title=http://stats.jenkins.io/,float=right,caption=]
+
+== Jenkins is the CD Orchestrator
+image::{imagedir}/jenkins-background.jpg[background, size=cover]
+
+image::{imagedir}/jenkins-cd-orchestrator.jpg[caption="CD orchestrator",width="600"]
+
+== 2016 - Jenkins 2
+image::{imagedir}/jenkins-background.jpg[background, size=cover]
+
+* Pourquoi Jenkins 2 ?
+** Jenkins 1 a(vait) + 10ans
+*** v1.658:
+**** acegi-security:1.0.7 — Avril 2008
+**** spring-core:2.5.6 — Octobre 2008
+** Parce que l’intégration continue a évolué
+*** jenkins-ci.org !?
+** slave ➞ agent
+** "Fire and forget"
+//
+//
+// == Who is behind ?
+// image::{imagedir}/jenkins-background.jpg[background, size=cover]

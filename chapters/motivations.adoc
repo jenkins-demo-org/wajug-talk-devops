@@ -1,0 +1,15 @@
+
+= Motivations of this talk
+
+== !
+
+image::{imagedir}/eng-pig.jpg[background, size=cover]
+
+== !
+
+[quote]
+____
+When you only have a hammer in your toolbox, everything looks like a nail.
+____
+
+image::{imagedir}/hammer-screw.png[height=500]

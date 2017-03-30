@@ -18,43 +18,10 @@
 
 = WaJUG DevOps Talk
 
-== Speakers
-
-=== Julien GARCIA-GONZALEZ
-
-image:{imagedir}/julien.jpg[]
-
-* DevOps Facilitator @ Wemanity
-** Helping on DevOps mindset adoption @ Lampiris
-* Frictionless mindset
-* Open-source lover
-* Come by to discuss the new trendies tech!
-* Contact:
-** Twitter: link:https://twitter.com/jgsqware[@jgsqware]
-** Github: link:https://github.com/jgsqware[jgsqware]
-** Google: garciagonzalez.julien@gmail.com
-
-=== Damien DUPORTAL
-
-image:{imagedir}/damien.jpg[]
-
-* Training Engineer @ CloudBees
-** “French fries you said ?”
-** Docker & Apple fanboy. Sorry
-** Human stack focused
-** Rock climber
-* Contact:
-** Twitter: link:https://twitter.com/DamienDuportal[@DamienDuportal]
-** Github: link:https://github.com/dduportal[dduportal]
-** Google: damien.duportal@gmail.com
-** Pro: dduportal@cloudbees.com
-
-
-== Motivations of this talk
-
-
 // Here are the chapters
 :leveloffset: +1
+include::chapters/speakers.adoc[]
+include::chapters/motivations.adoc[]
 include::chapters/gitlab-project.adoc[]
 include::chapters/jenkins-project.adoc[]
 include::chapters/context.adoc[]
