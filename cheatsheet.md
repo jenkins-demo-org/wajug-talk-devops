@@ -75,8 +75,16 @@ stage('Verify') {
 ```groovy
 stage('Deploy') {
   steps {
+    input(message: 'Is it OK to deploy Boss ?', id: 'boss')
     sh 'docker tag worker:latest 172.17.0.1:5000/worker:latest'
     sh 'docker push 172.17.0.1:5000/worker:latest'
   }
 }
+```
+
+## Shared Library
+
+```groovy
+#!groovy
+@Library('deploy@master') _
 ```

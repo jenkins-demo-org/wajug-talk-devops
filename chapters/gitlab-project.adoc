@@ -9,10 +9,11 @@ image::{imagedir}/gitlab.png[width="500"]
 
 * Start as a Github fork
 * Remote and Community driven
-* GitLab is unique: 
+* GitLab is unique:
 ** We go from idea to production using one single interface that integrates all the tools we need!
 
 == From Idea To Production
+image::{imagedir}/gitlab-background.jpg[background, size=cover]
 
 image::{imagedir}/idea-to-production.png[width="1000"]
 
