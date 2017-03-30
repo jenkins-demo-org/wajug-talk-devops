@@ -5,4 +5,4 @@ services:
     image: dduportal/docker-asciidoctor:alpine
     volumes:
     - ./:/documents
-    command: asciidoctor-revealjs -D /documents/dist /documents/slides.adoc
+    command: asciidoctor-revealjs -D /documents/docs -o index.html /documents/slides.adoc
