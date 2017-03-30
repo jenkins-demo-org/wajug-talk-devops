@@ -25,35 +25,8 @@ pipeline {
   agent {
     dockerfile {
       filename 'Dockerfile.build'
-	    args '-v /var/run/docker.sock:/var/run/docker.sock'
+	    args '-e DOCKER_HOST=tcp://192.168.0.1:2375'
     }
-  }
-  stages {
-    stage('Validate') {
-      steps {
-        sh 'mvn compile test'
-      }
-    }
-    stage('Verify') {
-      steps {
-        sh 'git submodule update --init --recursive'
-        sh 'mvn verify'
-      }
-    }
-  }
-}
-```
-
-## Jenkinsfile with parallel
-
-```groovy
-pipeline {
-  agent {
-    dockerfile {
-      filename 'Dockerfile.build'
-      args '-e DOCKER_HOST=tcp://192.168.0.1:2375'
-    }
-
   }
   stages {
     stage('Validate') {
@@ -64,18 +37,8 @@ pipeline {
     }
     stage('Verify') {
       steps {
-        parallel(
-          "Integration Test": {
-            sh 'git submodule update --init --recursive'
-            sh 'mvn verify'
-
-          },
-          "Docker Tests": {
-			      unstash 'target'
-			      sh 'ls -l ./target/'
-            sh 'bats ./src/test/bats/*.bats'
-          }
-        )
+        sh 'git submodule update --init --recursive'
+        sh 'mvn verify'
       }
     }
   }
@@ -86,4 +49,34 @@ pipeline {
 }
 ```
 
+## Jenkinsfile with parallel
+
+```groovy
+stage('Verify') {
+  steps {
+    parallel(
+      "Integration Test": {
+        sh 'git submodule update --init --recursive'
+        sh 'mvn verify'
+
+      },
+      "Docker Tests": {
+	      unstash 'target'
+	      sh 'ls -l ./target/'
+        sh 'bats ./src/test/bats/*.bats'
+      }
+    )
+  }
+}
+```
+
 ## Jenkinsfile with deploy
+
+```groovy
+stage('Deploy') {
+  steps {
+    sh 'docker tag worker:latest 172.17.0.1:5000/worker:latest'
+    sh 'docker push 172.17.0.1:5000/worker:latest'
+  }
+}
+```

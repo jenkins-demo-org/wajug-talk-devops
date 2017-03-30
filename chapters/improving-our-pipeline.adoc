@@ -15,3 +15,10 @@
 * CD: Continuous Delivery
 
 image::{imagedir}/cd-howto-pipeline.png[width=800]
+
+
+== Continuous Deployment ?
+
+* When the Dev meet the Ops
+
+image::{imagedir}/continuous-depl-vs-delivery.jpg[width=800]
