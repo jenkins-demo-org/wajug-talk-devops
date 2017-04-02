@@ -27,7 +27,7 @@ include::chapters/jenkins-project.adoc[]
 include::chapters/context.adoc[]
 include::chapters/worker-app.adoc[]
 include::chapters/improving-our-pipeline.adoc[]
-// include::chapters/deploy.adoc[]
+include::chapters/demo.adoc[]
 include::chapters/gitlab-vs-jenkins.adoc[]
 
 :leveloffset: -1
