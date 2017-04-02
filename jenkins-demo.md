@@ -10,7 +10,7 @@
 ```bash
 mkdir jenkins-demo-wajug
 cd jenkins-demo-wajug
-vagrant box add jenkins-demo-wajug <URL of Box>
+vagrant box add jenkins-demo-wajug https://github.com/oufti-playground/wajug-talk-devops/releases/tag/1.0.0/jenkins-lab-demo.box
 vagrant init -m -f jenkins-demo-wajug
 vagrant up
 ```
