@@ -93,7 +93,8 @@ stage('Verify') {
       },
       "Docker Tests": {
 	      unstash 'target'
-        sh 'bats ./src/test/bats/*.bats'
+        sh 'ls -al ./target'
+        sh 'bats ./src/test/bats/docker_suite.bats'
       }
     )
   }
