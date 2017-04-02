@@ -64,7 +64,7 @@ pipeline {
     stage('Validate') {
       steps {
         sh 'mvn compile test'
-        stash(name: 'target', includes: 'target/**')
+        stash(name: 'worker-generated-jars', includes: 'target/*.jar')
       }
     }
     stage('Verify') {
@@ -92,7 +92,7 @@ stage('Verify') {
 
       },
       "Docker Tests": {
-	      unstash 'target'
+	      unstash 'worker-generated-jars'
         sh 'ls -al ./target'
         sh 'bats ./src/test/bats/docker_suite.bats'
       }
