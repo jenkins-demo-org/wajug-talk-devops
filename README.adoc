@@ -4,9 +4,11 @@
 
 [source,bash]
 ----
-docker-compose up
+docker-compose up # Generate HTML slides in ./docs/index.html
+docker-compose -f pdf.yml up # Generate PDF slides from HTML slides in ./docs/slides.pdf
 ----
 
-You can then find the slides in ./docs/
+You can then find the generated content in ./docs/
 
-You can find the online reveal presentation here: https://jenkins-demo-org.github.io/wajug-talk-devops/
+You can find the online reveal presentation here:
+https://jenkins-demo-org.github.io/wajug-talk-devops/
